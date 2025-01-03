@@ -1,0 +1,4 @@
+library/library/__pycache__
+library/library/management/commands/__pycache__
+library/library/migrations/__pycache__
+library/venv

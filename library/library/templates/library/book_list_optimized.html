@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book List - Optimized</title>
+</head>
+<body>
+    <h1>Books List (Optimized Query)</h1>
+    <p>Watch the Django Debug Toolbar for query count!</p>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.book_id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author.name }}</td>
+                <td>{{ book.publisher.name }}</td>
+                <td>{{ book.isbn }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <p>
+        <a href="{% url 'library:book-list-non-optimized' %}">View Non-Optimized Version</a>
+    </p>
+</body>
+</html>
