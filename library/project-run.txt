@@ -1,3 +1,6 @@
+#Project set up and run commands:
+
+
 python3 -m venv venv
 
 source venv/bin/activate
@@ -13,3 +16,7 @@ python manage.py create_sample_data
 python manage.py runserver 
 
 Go to ----> http://127.0.0.1:8000/library/non-optimized/
+
+Go to ----> http://127.0.0.1:8000/library/optimized/
+
+Go to ----> http://127.0.0.1:8000/library/prefetch-related/
